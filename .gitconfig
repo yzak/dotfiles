@@ -1,0 +1,24 @@
+[core]
+  editor = vim
+  excludesfile = ~/.gitignore_global
+[merge]
+  tool = vimdiff
+  ff = false
+[http]
+  sslVerify = false
+[alias]
+  graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
+  st = status
+  df = diff
+  co = checkout
+  last = show -1 HEAD --stat -p
+  ci = commit
+  bull = pull
+  dfc = diff --color-words
+[color]
+  ui = true
+  diff = true
+
+[pull]
+  rebase = preserve
+
